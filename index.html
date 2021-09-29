@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code Basics: основы программирования</title>
+    <meta name="description" content="Бесплатные практические уроки по программированию для тех, кто начинает с нуля.">
+    <meta property="og:image" content="/images-header.png">
+    <!-- viewport шириной 980px с начальным масштабированием 1 и запретом пользователю масштабирования документа -->
+    <meta name="viewport" content="width=980, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico" sizes="64x64">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <header>
+        <img class="hi" src="img/580832503586357248.gif" alt="Логотип" width="70px" height="70px">
+        <!-- Логотип сайта -->
+        <nav>
+            <!-- Меню -->
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Кинопоиск</a></li>
+                <li><a href="#">BoyNextDoor</a></li>
+                <li><a href="https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80">ЦП</a>
+                </li>
+            </ul>
+        </nav>
+        <p id="anchor"></p>
+    </header>
+    <aside>
+        <!-- Боковая панель (сайдбар) -->
+        <nav>
+            <!-- Дополнительное меню раздела -->
+            <ul>
+                <p>Aside</p>
+                <li><a href="#">Услуга 1</a></li>
+                <li><a href="#">Услуга 2</a></li>
+                <li><a href="#">Услуга 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <!-- Основной контент страницы. Это может быть статья, описание услуги, данные на странице, контакты, форма заказа услуги -->
+    </main>
+    <div>
+        <h1>Code Basics</h1>
+        <p>Бесплатные уроки по программированию и HTML для новичков</p>
+        <p style="font-size: 25px; color: grey;">Первое изменение стиля с помощью CSS</p>
+        <p title="Всплывающая подсказка">Наведите курсор мыши на эту строку текста</p>
+    </div>
+    <div>
+        <ul>
+
+            <li>Первый элемент списка</li>
+            <li>Второй элемент списка</li>
+            <li>3 элемент списка</li>
+        </ul>
+        <ol>
+            <li>Первый элемент списка</li>
+            <li>Второй элемент списка</li>
+            <li>3 элемент списка</li>
+        </ol>
+    </div>
+    <div>
+        <h1>Заголовок первого уровня</h1>
+        <h2>Заголовок второго уровня</h2>
+        <h3>Заголовок третьего уровня</h3>
+        <h4>Заголовок четвёртого уровня</h4>
+        <h5>Заголовок пятого уровня</h5>
+        <h6>Заголовок шестого уровня</h6>
+    </div>
+    <div>
+        <table>
+            <caption>Типо заголовок</caption>
+            <thead>
+                <!-- Блок с заголовками -->
+                <tr>
+                    <!-- Строка -->
+                    <th>Первая ячейка</th>
+                    <th>Вторая ячейка</th>
+                    <th>Третья ячейка</th>
+                    <th>4 ячейка</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <!-- Вторая строка -->
+                <td>Первая ячейка</td>
+                <td>Вторая ячейка</td>
+                <td>Третья ячейка</td>
+            </tr>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Добавил 2 строки</th>
+                    <th>Добавил 3 столбца</th>
+                    <th>Объединил 2 столбца во второй строке</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Итого</td>
+                    <td>Упражнение пройдено</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <pre>
+        Вы ушли,
+                как говорится,
+                              в мир в иной.
+        Пустота...
+                Летите,
+                      в звезды врезываясь.
+        Ни тебе аванса,
+                              ни пивной.
+        Трезвость.
+        </pre>
+    </div>
+    <div>
+        <img src="img/580832503586357248.gif" alt="Аналитика компании за 2007 год" width="80" height="80">
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.ogg">
+            <source src="https://www.w3schools.com/html/horse.mp3">
+        </audio>
+        <video src="https://www.w3schools.com/html/movie.mp4" width="320" height="240" controls></video>
+        <a href="img/oWRIZck.jpg" download rel="noopener">Скачать фотку</a>
+        <a title="Всплывающая подсказка">Ссылка заглушка</a>
+    </div>
+    <div>
+        <form action="/people" method="POST">
+            <input type="text" name="total" id="total-fild" value="55">
+            <input type="text" value="тут автовокус" autofocus placeholder="ткест подсказки">
+        </form>
+        <form>
+            <label>
+                <input type="checkbox" name="languages" value="HTML">
+                Хочу изучать HTML
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="languages" value="CSS">
+                Хочу изучать CSS
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="languages" value="JS">
+                Хочу изучать JS
+            </label>
+        </form>
+        <form action="/people">
+            <label>
+                <input type="radio" name="gender" value="man">
+                Мужчина
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="woman">
+                Женщина
+            </label>
+        </form>
+        <form action="/people">
+            <textarea cols="30" rows="4"></textarea>
+        </form>
+        <form action="/people">
+            <h1>Какой курс вы хотите пройти?</h1>
+            <select>
+
+
+                <option>PHP</option>
+
+                <option>HTML</option>
+                <option>CSS</option>
+            </select>
+        </form>
+        <form action="/people" method="POST">
+            <label>
+                Имя
+                <input type="text">
+            </label>
+            <label>
+                Почта
+                <input type="text">
+            </label>
+            <label>
+                Пассворд
+                <input type="password" name="password" id="password-field" value="0000" required>
+            </label>
+            <select multiple>
+                <option disabled>Какой курс вы хотите пройти?</option>
+                <option>JS</option>
+                <option>PHP</option>
+                <option>Java</option>
+            </select>
+            <input type="submit" value="Войти">
+            <button>Просто кнопка</button>
+        </form>
+    </div>
+    <div>
+        <form action="/download" method="POST">
+            <input type="file" name="avatar">
+            <input type="hidden" name="ass">
+            <input type="submit" value="Загрузить">
+        </form>
+    </div>
+    <div>
+        <form action="#" method="POST">
+            <label>
+                чтото
+                <input type="text" name="staff" value="">
+                <input type="reset" value="Сбросить">
+                <input type="button" value="кнопка через инпут">
+                <input type="image" src="img/-xicljp3pimexzs8fm8pchcivrq.png" alt="войти(кнопка картинка через инпут)">
+                <button type="submit">Кнопка через баттон субмит</button>
+            </label>
+        </form>
+    </div>
+    <div>
+        <form action="#" method="POST" oninput="daysout.value=days.value">
+            <fieldset>
+                <legend>Simple fieldset</legend>
+                <input type="date" name="" id="">
+                <input type="time" name="" id="">
+                <label for="myBrowser">Choose a browser from this list:</label>
+                <input list="browsers" id="myBrowser" name="myBrowser" />
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Internet Explorer">
+                    <option value="Opera">
+                    <option value="Safari">
+                    <option value="Microsoft Edge">
+                </datalist>
+                <input type="number" name="" id="">
+                <input type="search" name="" id="">
+                <label>
+                    1<input type="range" name="days" id="days-id" min="1" max="21" step="0.5">21</label>
+                <output name="daysout"></output>
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <select>
+            <optgroup label="Группа 1">
+                <option>Опция 1.1</option>
+            </optgroup>
+            <optgroup label="Группа 2">
+                <option>Опция 2.1</option>
+                <option>Опция 2.2</option>
+            </optgroup>
+            <optgroup label="Группа 3" disabled>
+                <option>Опция 3.1</option>
+                <option>Опция 3.2</option>
+                <option>Опция 3.3</option>
+            </optgroup>
+        </select>
+    </div>
+    <div>
+        <p id="red">Красный параграф через ID</p>
+        <p class="line">Подчёркнутый текст</p>
+        <p class="lineth">Перечёркивание текста</p>
+        <p class="lineo">Надчёркивание текста</p>
+    </div>
+    <div>
+        <h2>Вес</h2>
+        <p>Селектор по тегу: 1</p>
+        <p>Селектор по классу: 10</p>
+        <p>Селектор по ID: 100</p>
+        <p>Стиль в атрибуте тега: 1000</p>
+    </div>
+    <div>
+        <p class="black-white">Текст с анимацией to-white. Цвет текста меняется с чёрного на белый и обратно</p>
+    </div>
+    <div>
+        <h1>CSS: Позиционирование </h1>
+        <section style="max-width: 500px;">relative (относительное позиционирование). Позволяет изменить расположение элемента относительно того места, где он был расположен до применения свойства. При этом, то место на странице, которое блок занимал ранее, останется. То есть другие блоки
+            не будут вставать на место, где блок располагался до применения правила position.</section>
+        <section style="max-width: 500px;">absolute (абсолютное позиционирование). «Вынимает» блок из HTML вёрстки и изменяет его расположение относительно левого верхнего угла cтраницы (или родительского элемента, если у него есть свойство position в значении fixed, absolute, relative,
+            или sticky). В отличии от relative, место, где располагался absolute блок, будет удалено, и другие блоки смогут занять это место.</section>
+        <section style="max-width: 500px;">fixed. Также, как и absolute, данное правило извлечёт блок из HTML вёрстки и расположит его в левом верхнем углу. Отличием от абсолютного позиционирования является то, что блок будет «следовать за страницей» и всегда находится в зоне видимости
+            пользователя. Это удобно для создания меню, которые должны следовать за пользователем.</section>
+        <section style="max-width: 500px;">Для управления расположением используются 4 правила CSS: top, right, left и bottom, значением которых являются координаты (например, в пикселях), где будет расположен блок.</section>
+    </div>
+    <h1>Дальше флексим</h1>
+    <div class="flexed">
+        <div class="f1">
+            <p>1</p>
+        </div>
+        <div class="f2">
+            <p>2</p>
+        </div>
+        <div class="f3">
+            <p>3</p>
+        </div>
+        <div class="f4">
+            <p>4</p>
+        </div>
+        <div class="f5">
+            <p>555555555555555555</p>
+        </div>
+    </div>
+    <a href="#anchor" style="text-align: right; display: block;" ">Переход на Top</a>    
+    <footer>
+        <section itemscope itemtype=" http://schema.org/Organization ">
+            <h1 itemprop=" name ">Компания «Прауд»</h1>
+            <p>Адрес: <span itemprop=" address ">г.Мотино, улица Строителей, дом 6</span></p>
+            <p>Телефон: <span itemprop=" telephone ">8 (8765) 333-00-00</span></p>
+            <p>Email: <span itemprop=" email ">info@proud-company.test</span></p>
+        </section>
+    </footer>
+</body>
+
+</html>

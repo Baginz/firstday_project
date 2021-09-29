@@ -1,0 +1,227 @@
+:root {
+    --main-blue: #00bfff;
+}
+
+.news-block {
+    background-color: var(--main-color);
+}
+
+.left-sidebar {
+    background-color: var(--main-color);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/background.png);
+}
+
+header {
+    background-color: rgb(82, 192, 255);
+    position: relative;
+    color: white;
+}
+
+header nav ul {
+    display: inline-block;
+}
+
+header nav li {
+    list-style-type: none;
+    float: left;
+    padding: 20px;
+    min-width: 60px;
+    border: solid white 1px;
+    text-align: center;
+}
+
+header nav li:hover {
+    background-color: tomato;
+}
+
+.hi {
+    float: left;
+    padding: 10px 10px 10px 40px;
+}
+
+main {}
+
+footer {
+    background-color: rgb(2, 128, 201);
+    padding: 40px;
+    color: white;
+}
+
+section {
+    padding: 24px;
+}
+
+.relative-position {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
+div {
+    box-shadow: 1px 5px 5px 0px rgb(171, 176, 187);
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(245, 247, 251);
+}
+
+.flexed {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*align-content: flex-end;*/
+    align-items: center;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+.flexed div {
+    width: 100px;
+    height: 100px;
+}
+
+.f1 {
+    align-self: flex-start;
+}
+
+.f2 {
+    align-self: flex-end;
+}
+
+.f3 {
+    order: -1;
+}
+
+.f4 {}
+
+.f5 {}
+
+aside {
+    background: #ffe8d8;
+    border-left: 5px solid #ffd5b8;
+    padding: 10px;
+    width: 200px;
+    float: right;
+    box-shadow: 1px 5px 5px 0px rgb(171, 176, 187);
+}
+
+body h1 {
+    padding: 40px;
+}
+
+a {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+article {
+    margin-right: 240px;
+    display: block;
+}
+
+table {
+    text-align: center;
+    border: 3px solid dodgerblue;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+td {
+    border: rgb(235, 135, 128) 2px solid;
+    padding: 5px;
+    background-color: bisque;
+}
+
+th {
+    border: dodgerblue 2px solid;
+    padding: 5px;
+}
+
+form {
+    margin: 20px;
+}
+
+#red {
+    color: red;
+}
+
+.line {
+    text-decoration: underline;
+}
+
+.lineth {
+    text-decoration: line-through;
+}
+
+.lineo {
+    text-decoration: overline;
+}
+
+.new-font {
+    font-family: Arial, Futura, sans-serif;
+}
+
+
+/*префиксы — небольшие дополнения для правил,
+ которые помогают браузеру увидеть, 
+ что мы хотим использовать новое правило.
+  Также префиксы необходимы для поддержки старых браузеров,
+   в которых по умолчанию может не быть правила.*/
+
+.block-shadow {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+/* На устройствах, с шириной экрана до 1000 пикселей
+   цвет фона у тега body будет голубым. */
+
+@media (max-width: 1000px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media (orientation: landscape) {
+    .blocks {
+        /* Правила для блоков */
+    }
+}
+
+@media (orientation: portrait) {
+    .blocks {
+        /* Правила для блоков */
+    }
+}
+
+@keyframes to-white {
+    0% {
+        color: black;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: black;
+    }
+}
+
+.black-white {
+    animation: to-white 3s infinite;
+}
